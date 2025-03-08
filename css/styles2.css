@@ -1,0 +1,189 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background: #e00000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: relative; /* Para que el icono se posicione relativo al header */
+}
+header h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: underline; /* Subrayado en el título */
+}
+/* Icono del carrito */
+.icono-carrito {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.icono-carrito img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #e00000;
+    background: #fff;
+    border: 1px solid #e00000;
+    border-radius: 5px;
+}
+
+/* Sección de productos */
+main {
+    margin-top: 20px;
+}
+
+.titulo-productos {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px); /* 3 productos por fila en PC */
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #e00000;
+}
+
+.producto .precio-original {
+    text-decoration: line-through;
+    color: #707070;
+    font-size: 0.9em;
+}
+
+.producto .precio-oferta {
+    color: #e00000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Botón de compra */
+button {
+    background: #e00000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #fff;
+    color: #e00000;
+    border: 2px solid #e00000;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background: #e00000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        display: none;
+    }
+
+    .productos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .producto {
+        width: calc(50% - 10px); /* 2 productos por fila en móviles */
+        font-size: 13px;
+    }
+}
+
+
+
+

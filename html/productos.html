@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Shop | Productos</title>
+    <link rel="icon" href="../img/sigma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+        <a href="carrito.html" class="icono-carrito">
+            <img src="../img/carrito.png" alt="Carrito">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h2 class="titulo-productos">Nuestros Productos</h2>
+
+            <!-- Contenedor de productos -->
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="../img/skibidi peluche.png" alt="Producto 1">
+                    <h3>Skibidi Toilet</h3>
+                    <p class="descripcion">¡El increíble e icónico Skibidi Toilet llega al mercado! (Nunca menciones a Cameraman en frente de él).</p>
+                    <p class="precio-original">$30.000</p>
+                    <p class="precio-oferta">$15.000</p>
+                    <button onclick="agregarAlCarrito(1, 'Skibidi Toilet', 15000, '../img/skibidi peluche.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/pomni peluche.png" alt="Producto 2">
+                    <h3>Pomni</h3>
+                    <p class="descripcion">La famosa e inigualable Pomni salió de la pantalla para robarse la mirada del público. (Nunca hables del circo con ella).</p>
+                    <p class="precio-oferta">$20.000</p>
+                    <button onclick="agregarAlCarrito(2, 'Pomni', 20000, '../img/pomni peluche.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/el primo peluche.png" alt="Producto 3">
+                    <h3>El Primo</h3>
+                    <p class="descripcion">¡Eeeel Priimoooo de Brawl Stars llega al mercado! (Sin dolor, no hay gloria).</p>
+                    <p class="precio-original">$10.000</p>
+                    <p class="precio-oferta">$5.000</p>
+                    <button onclick="agregarAlCarrito(3, 'El Primo', 10000, '../img/el primo peluche.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/jordan23.png" alt="Producto 4">
+                    <h3>Jordan23</h3>
+                    <p class="descripcion">¡El conocido Jordan Veintitrrrr llega al mercado! (No lo provoques, o si no sacará la 40).</p>
+                    <p class="precio-oferta">$5.000</p>
+                    <button onclick="agregarAlCarrito(4, 'Jordan23', 5000, '../img/jordan23.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/trollface.png" alt="Producto 5">
+                    <h3>Trollface</h3>
+                    <p class="descripcion">¡El mítico meme inolvidable Trollface está disponible! (Disponible para trollearte).</p>
+                    <p class="precio-original">15.000</p>
+                    <p class="precio-oferta">$5.000</p>
+                    <button onclick="agregarAlCarrito(5, 'Trollface', 5000, '../img/trollface.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/cameraman.png" alt="Producto 6">
+                    <h3>Cameraman</h3>
+                    <p class="descripcion">¡Cameraman finalmente llegó al mercado! (Recomendación: no compres Skibidi Toilet junto a Cameraman).</p>
+                    <p class="precio-oferta">$20.000</p>
+                    <button onclick="agregarAlCarrito(6, 'Cameraman', 20000, '../img/cameraman.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/sus.png" alt="Producto 7">
+                    <h3>Among us</h3>
+                    <p class="descripcion">¡El famoso personaje de Among Us llega desde el espacio para robarse todas las miradas! (Cuidado, porque quizás sea el impostor).</p>
+                    <p class="precio-oferta">$10.000</p>
+                    <button onclick="agregarAlCarrito(7, 'Among Us', 10000, '../img/sus.png')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/frontman.png" alt="Producto 8">
+                    <h3>Frontman</h3>
+                    <p class="descripcion">¡Frontman se hace visible para el público! (¿Estás listo para participar en el Juego del Calamar?)</p>
+                    <p class="precio-oferta">$25.000</p>
+                    <button onclick="agregarAlCarrito(8, 'Frontman', 25000, '../img/frontman.png')">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sigma Shop</p>
+    </footer>
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
+
